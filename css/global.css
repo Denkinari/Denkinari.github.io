@@ -1,0 +1,25 @@
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to top right, #053252, #0d105a);
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

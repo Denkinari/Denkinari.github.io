@@ -1,0 +1,144 @@
+.rodape {
+  padding: 50px 0px;
+  background-color: #03022b;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.rodape-area1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0px;
+  width: 350px;
+}
+
+.rodape-texto {
+  color: #a3a3a3;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.separador {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 2px;
+  height: 200px;
+}
+
+.rodape-subtitulo {
+  font-size: 2.5rem;
+  font-weight: 500;
+  top: -30px;
+  margin-left: 17px;
+  position: absolute;
+}
+
+.rodape-email-telefone {
+  display: flex;
+  font-size: 1.68rem;
+  gap: 20px;
+  padding: 20px;
+  color: #a3a3a3;
+}
+
+.rodape-email-telefone img {
+  width: 30px;
+}
+
+.direitos {
+  color: #a3a3a3;
+  display: block;
+  font-size: 1.185rem;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.direitos strong {
+  background: linear-gradient(45deg, #6c9be0 -0.29%, #1b2cc7 99.88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 890px) {
+  .rodape-email-telefone,
+  .rodape-texto {
+    font-size: 1.4rem;
+  }
+
+  .rodape-subtitulo {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .rodape {
+    flex-direction: column;
+    place-content: center;
+  }
+
+  .separador {
+    display: none;
+  }
+
+  .rodape-texto {
+    text-align: center;
+  }
+
+  .rodape-subtitulo {
+    position: initial;
+    text-align: center;
+  }
+
+  .rodape-area1 .rodape-email-telefone {
+    justify-content: center;
+    margin-top: 10px 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .rodape-area1 {
+    width: auto;
+  }
+
+  .rodape-texto {
+    font-size: 1.125rem;
+    margin: 0px 10px;
+  }
+
+  .rodape-email-telefone {
+    font-size: 1.125rem;
+    place-self: center;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .rodape-area1 {
+    margin: auto;
+  }
+
+  .rodape-area1 .rodape-texto {
+    font-size: 1rem;
+  }
+
+  .rodape-subtitulo {
+    margin-top: 20px;
+  }
+
+  .rodape-area2 {
+    margin: auto;
+  }
+
+  .rodape-email-telefone {
+    margin: auto;
+  }
+}
